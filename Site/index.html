@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <input type="text" placeholder="Search movies" class="search-bar" />
+        <nav>
+          <button>Movies</button>
+          <button>TV Series</button>
+          <button>Animation</button>
+          <button>Mystery</button>
+          <button>More</button>
+          <button id="open-favorites-button" className="bold">Ver Filmes Favoritos</button>
+        </nav>
+      </header>
+      <main>
+        <section class="highlight" id="highlight-section">
+          <img
+            id="highlight-image"
+            src="https://www.themoviedb.org/t/p/w1280/fUwfsPWEEdnSt29jIwJ5eVtySX6.jpg"
+            alt="Highlight Movie"
+          />
+          <div class="highlight-info">
+            <h2>Spider-Man: Across the Spider-Verse</h2>
+            <p>Animation, Adventure</p>
+            <button>Watch</button>
+            <button>Download</button>
+          </div>
+        </section>
+        <section class="movies-list">
+          <h3>Filmes Populares</h3>
+          <div id="filmes"></div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
